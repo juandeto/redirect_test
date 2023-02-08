@@ -8,11 +8,10 @@
 </head>
 <body style="background: #FFF">
     <h1>Re direct page</h1>
-    <a href="http://192.168.0.213:3000">Go to local</a>
+    <a id="redirect-link" href="http://192.168.0.213:3000">Go to local</a>
 </body>
 <script>
-    setTimeout(function() {
-        window.location="http://192.168.0.213:3000"
-    }, 3000)
+   const linkBtn = document.getElementById("redirect-link")
+   linkBtn.focus()
 </script>
 </html>
